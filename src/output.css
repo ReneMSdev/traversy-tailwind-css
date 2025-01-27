@@ -727,8 +727,14 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
+  }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
   }
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
@@ -873,6 +879,9 @@
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
+  }
+  .w-18 {
+    width: calc(var(--spacing) * 18);
   }
   .w-screen {
     width: 100vw;
@@ -1477,6 +1486,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
