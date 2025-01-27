@@ -2072,11 +2072,32 @@
   .decoration-wavy {
     text-decoration-style: wavy;
   }
+  .decoration-2 {
+    text-decoration-thickness: 2px;
+  }
+  .decoration-3 {
+    text-decoration-thickness: 3px;
+  }
   .decoration-auto {
     text-decoration-thickness: auto;
   }
   .decoration-from-font {
     text-decoration-thickness: from-font;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .underline-offset-5 {
+    text-underline-offset: 5px;
+  }
+  .underline-offset-6 {
+    text-underline-offset: 6px;
+  }
+  .underline-offset-7 {
+    text-underline-offset: 7px;
+  }
+  .underline-offset-8 {
+    text-underline-offset: 8px;
   }
   .underline-offset-auto {
     text-underline-offset: auto;
@@ -2437,10 +2458,38 @@
       }
     }
   }
+  .hover\:text-brightRedLight {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brightRedLight);
+      }
+    }
+  }
   .hover\:text-darkGrayishBlue {
     &:hover {
       @media (hover: hover) {
         color: var(--color-darkGrayishBlue);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:underline-offset-0 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 0px;
+      }
+    }
+  }
+  .hover\:underline-offset-2 {
+    &:hover {
+      @media (hover: hover) {
+        text-underline-offset: 2px;
       }
     }
   }
