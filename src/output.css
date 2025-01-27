@@ -1385,6 +1385,20 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-18 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 18) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 18) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-20 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-32 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -2006,6 +2020,9 @@
   .text-green-500 {
     color: var(--color-green-500);
   }
+  .text-veryDarkBlue {
+    color: var(--color-veryDarkBlue);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -2557,6 +2574,11 @@
       outline-style: none;
     }
   }
+  .sm\:block {
+    @media (width >= 480px) {
+      display: block;
+    }
+  }
   .sm\:w-auto {
     @media (width >= 480px) {
       width: auto;
@@ -2645,6 +2667,11 @@
       background-color: transparent;
     }
   }
+  .md\:px-0 {
+    @media (width >= 768px) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
   .md\:py-1 {
     @media (width >= 768px) {
       padding-block: calc(var(--spacing) * 1);
@@ -2677,6 +2704,50 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .lg\:mx-12 {
+    @media (width >= 976px) {
+      margin-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:block {
+    @media (width >= 976px) {
+      display: block;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 976px) {
+      display: none;
+    }
+  }
+  .lg\:flex-col {
+    @media (width >= 976px) {
+      flex-direction: column;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 976px) {
+      flex-direction: row;
+    }
+  }
+  .lg\:items-start {
+    @media (width >= 976px) {
+      align-items: flex-start;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 976px) {
+      justify-content: space-between;
+    }
+  }
+  .lg\:space-y-0 {
+    @media (width >= 976px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+      }
+    }
+  }
   .lg\:space-x-5 {
     @media (width >= 976px) {
       :where(& > :not(:last-child)) {
@@ -2693,6 +2764,62 @@
         margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
       }
+    }
+  }
+  .lg\:space-x-10 {
+    @media (width >= 976px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .lg\:space-x-12 {
+    @media (width >= 976px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 12) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .lg\:space-x-16 {
+    @media (width >= 976px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 16) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .lg\:space-x-20 {
+    @media (width >= 976px) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
+  .lg\:bg-darkBlue {
+    @media (width >= 976px) {
+      background-color: var(--color-darkBlue);
+    }
+  }
+  .lg\:px-0 {
+    @media (width >= 976px) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:text-darkBlue {
+    @media (width >= 976px) {
+      color: var(--color-darkBlue);
+    }
+  }
+  .lg\:text-veryDarkBlue {
+    @media (width >= 976px) {
+      color: var(--color-veryDarkBlue);
     }
   }
 }
